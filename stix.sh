@@ -11,13 +11,12 @@ if [ -z "$1" ] || [ "$argumant" = "help" ] || [ "$argumant" = "h" ]; then
   exit 1
 
 elif [ "$argumant" = "search" ] || [ "$argumant" = "s" ]; then
-
   ls ~/.packages/void-packages/srcpkgs/ | grep "$packageName"
   exit 1
 
 elif [ "$argumant" = "init" ]; then
   mkdir ~/.packages
-  git clone https://github.com/void-linux/void-packages ~/.packages
+  git clone https://github.com/void-linux/void-packages ~/.packages/void-packages
   exit 1
 
 elif [ "$argumant" = "install" ] || [ "$argumant" = "i" ]; then
@@ -32,7 +31,7 @@ elif [ "$argumant" = "pull" ] || [ "$argumant" = "p" ]; then
   git pull
   exit 1
 
-else 
+else
   echo "stix: unknown argument"
   echo "Try 'stix help' for more information."
 fi
