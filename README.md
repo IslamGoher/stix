@@ -1,4 +1,4 @@
-# stix
+# STIX: Script To Install Xbps-src packages
 
 stix is a shell script designed to simplify the process of cloning the xbps-src repository and installing packages from it. xbps-src is the build system used by the Void Linux distribution to build packages. This script automates the setup and installation steps, making it easier for users to manage and install software directly from the source.
 
