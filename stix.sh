@@ -4,10 +4,10 @@ packageName=$2
 if [ -z "$1" ] || [ "$argumant" = "help" ] || [ "$argumant" = "h" ]; then
   echo "Usage: stix [argument] [package name]"
   echo "Arguments:"
-  echo "  [init]: for cloning the xbps-src repository"
-  echo "  [pull] or [p]: for syncing the repository"
-  echo "  [search] or [s]: for displaying the available packages"
-  echo "  [install] or [i]: for installing the packge"
+  echo "  [init]: cloning the xbps-src repository"
+  echo "  [pull] or [p]: syncing the repository"
+  echo "  [search] or [s]: displaying the available packages"
+  echo "  [install] or [i]: installing the packge"
   exit 1
 
 elif [ "$argumant" = "search" ] || [ "$argumant" = "s" ]; then
