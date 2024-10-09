@@ -15,7 +15,7 @@ stix is a shell script designed to simplify the process of cloning the xbps-src 
 
 * **Link the script to the bin folder**
   ```bash
-  $ ls ~/.packages/stix/stix.sh /bin/stix
+  $ ln ~/.packages/stix/stix.sh /bin/stix
   ```
 
 * **Initialize stix by cloning the xbps-repo**
