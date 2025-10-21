@@ -1,5 +1,11 @@
 argumant=$1
 packageName=$2
+unknownArgument=$3
+
+if [ "$unknownArgument" ]; then
+  echo "stix: unknown argument '$unknownArgument'. Try 'stix help' for more information."
+  exit
+fi
 
 if [ -z "$1" ] || [ "$argumant" = "help" ] || [ "$argumant" = "h" ]; then
   echo "Usage: stix [argument] [package name]"
@@ -35,6 +41,6 @@ elif [ "$argumant" = "pull" ] || [ "$argumant" = "p" ]; then
   exit 1
 
 else
-  echo "stix: unknown argument"
-  echo "Try 'stix help' for more information."
+  echo "stix: unknown argument '$argumant'. Try 'stix help' for more information."
+  exit
 fi
