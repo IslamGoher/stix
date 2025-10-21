@@ -4,7 +4,7 @@ unknownArgument=$3
 
 if [ "$unknownArgument" ]; then
   echo "stix: unknown argument '$unknownArgument'. Try 'stix help' for more information."
-  exit
+  exit 1
 fi
 
 if [ -z "$1" ] || [ "$argumant" = "help" ] || [ "$argumant" = "h" ]; then
@@ -42,5 +42,5 @@ elif [ "$argumant" = "pull" ] || [ "$argumant" = "p" ]; then
 
 else
   echo "stix: unknown argument '$argumant'. Try 'stix help' for more information."
-  exit
+  exit 1
 fi
