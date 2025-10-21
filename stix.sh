@@ -18,7 +18,7 @@ elif [ "$argumant" = "init" ]; then
   mkdir ~/.packages
   git clone https://github.com/void-linux/void-packages ~/.packages/void-packages
   ~/.packages/void-packages/xbps-src binary-bootstrap
-  echo XBPS_ALLOW_RESTRICTED=yes >> etc/conf
+  echo XBPS_ALLOW_RESTRICTED=yes >>  ~/.packages/void-packages/etc/conf
   exit 1
 
 elif [ "$argumant" = "install" ] || [ "$argumant" = "i" ]; then
